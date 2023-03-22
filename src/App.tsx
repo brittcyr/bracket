@@ -23,9 +23,10 @@ function App() {
   ) => {
     if (projections) {
       simulator.current_projections_type = projections;
-      simulator.reset().then();
-      setRerun(!rerun);
-      setProjections(projections);
+      simulator.reset().then(() => {
+        setRerun(!rerun);
+        setProjections(projections);
+      });
     }
   };
 
