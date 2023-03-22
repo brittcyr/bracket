@@ -74,10 +74,13 @@ function App() {
     }
 
     run_worker().then();
-  }, [simulator.current_projections_type, rerun]);
+  }, [rerun]);
 
   return (
     <div className="App">
+      <div>
+        DK Onyx Bracket equity distribution.
+      </div>
         Num sims: {numSims}
         <ToggleButtonGroup
           value={projections}
