@@ -100,6 +100,13 @@ function App() {
         </ToggleButtonGroup>
         <SimulationResultsTable data={playerData} />
         Wait until 10,000 simulations finish. Then try switching projections.
+        <div>
+          Source code: 
+          <a href="https://github.com/brittcyr/bracket"  target="_blank">
+            https://github.com/brittcyr/bracket
+          </a>
+
+        </div>
     </div>
   );
 }
