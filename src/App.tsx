@@ -45,7 +45,7 @@ function App() {
         setPlayerData(player_data);
         setNumSims(sims);
       */
-      const sims_to_do = simulator.num_sims < 1_000 ? 100 : 1_000;
+      const sims_to_do = 100;
       for (let i = 0; i < sims_to_do; i++) {
         simulator.do_sim_and_score();
       }
@@ -63,7 +63,7 @@ function App() {
       setPlayerData(mostRecentPlayerData);
       setNumSims(num_sims);
 
-      if (simulator.num_sims > 9_001) {
+      if (simulator.num_sims > 9_999) {
         return;
       }
       setTimeout(
