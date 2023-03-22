@@ -22,7 +22,7 @@ function App() {
     projections: string | null,
   ) => {
     if (projections) {
-      simulator.current_projections_type = projections;
+      simulator.set_projections_type(projections);
       simulator.reset().then(() => {
         setRerun(!rerun);
         setProjections(projections);

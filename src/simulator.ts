@@ -64,6 +64,10 @@ export class Simulator {
         this.player_selections = all_selections;
     }
 
+    set_projections_type(projections_type: string) {
+        this.current_projections_type = projections_type;
+    }
+
     // Resets the number of sims and all of the profits and winrate on all of the player selections
     async reset() {
         this.num_sims = 0;
