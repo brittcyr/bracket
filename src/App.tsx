@@ -79,7 +79,7 @@ function App() {
   return (
     <div className="App">
       <div>
-        DK Onyx Bracket equity distribution.
+        DK Onyx Bracket Pre-Tournament equity distribution.
       </div>
         Num sims: {numSims}
         <ToggleButtonGroup
@@ -105,7 +105,14 @@ function App() {
           <a href="https://github.com/brittcyr/bracket"  target="_blank">
             https://github.com/brittcyr/bracket
           </a>
-
+        </div>
+        <div>
+          Equity distribution comes from running simulations of the whole
+          tournament (does not lock in results up to the present, that is coming
+          later) using the given ratings set. This shows that game theory was a
+          huge aspect of the contest. Getting a unique winner or a clear
+          path to win was crucial.
+          
         </div>
     </div>
   );
