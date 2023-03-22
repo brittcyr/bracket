@@ -22,8 +22,8 @@ function App() {
     projections: string | null,
   ) => {
     if (projections) {
-      simulator.reset().then();
       simulator.current_projections_type = projections;
+      simulator.reset().then();
       setRerun(!rerun);
       setProjections(projections);
     }
